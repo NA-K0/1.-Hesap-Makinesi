@@ -1,3 +1,4 @@
+
 print("""
 #### Sıcaklık Çevirici Program ####
 1. Celcius ---> Fahrenheit
@@ -15,6 +16,8 @@ if selec == "1":
 elif selec == "2":
     Celcius=float(input("Celsius Sıcaklığını Giriniz:"))
     Kelvin=(Celcius+273)
+    if Kelvin <= 0 :
+        Kelvin = 0
     print(Kelvin)
 elif selec == "3":
     Fahrenheit=float(input("Fahrenheit Sıcaklığını Giriniz:"))
@@ -23,6 +26,8 @@ elif selec == "3":
 elif selec == "4":
     Fahrenheit=float(input("Fahrenheit Sıcaklığını Giriniz:"))
     Kelvin=(((Fahrenheit-32)*5)/9)+273
+    if Kelvin <= 0 :
+        Kelvin = 0
     print(Kelvin)
 elif selec == "5":
     Kelvin=float(input("Kelvin Sıcaklığını Giriniz:"))
@@ -35,3 +40,4 @@ elif selec == "6":
 
 else:
     print("Yanlis Girdiniz Tekrar Deneyin")
+    
