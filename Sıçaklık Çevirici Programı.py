@@ -16,7 +16,7 @@ if selec == "1":
 elif selec == "2":
     Celcius=float(input("Celsius Sıcaklığını Giriniz:"))
     Kelvin=(Celcius+273)
-    if Kelvin <= 0 :
+    if Kelvin < 0 :
         Kelvin =("Kelvin Sıfırın Altına Düşmez")
     print(Kelvin)
 elif selec == "3":
@@ -26,7 +26,7 @@ elif selec == "3":
 elif selec == "4":
     Fahrenheit=float(input("Fahrenheit Sıcaklığını Giriniz:"))
     Kelvin=(((Fahrenheit-32)*5)/9)+273
-    if Kelvin <= 0 :
+    if Kelvin < 0 :
         Kelvin =("Kelvin Sıfırın Altına Düşmez")
     print(Kelvin)
 elif selec == "5":
